@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1062803036484",
+    "project_id": "avitiens-20db5",
+    "storage_bucket": "avitiens-20db5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1062803036484:android:0cca38b24528618abd1f11",
+        "android_client_info": {
+          "package_name": "com.example.avitiens"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1062803036484-sloio6ilpnl5bkoepmmnu684299nrcik.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDIgRq5lCPXNJGR6EyOAk8Y2XsB3ceb9S4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1062803036484-sloio6ilpnl5bkoepmmnu684299nrcik.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
