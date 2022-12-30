@@ -72,7 +72,7 @@ public class firstpage extends AppCompatActivity {
                     editor.commit();
 
                     Intent intent=new Intent(firstpage.this,Home.class);
-                    startActivity(intent);
+                   startActivity(intent);
                     finish();
                 }
                 else {

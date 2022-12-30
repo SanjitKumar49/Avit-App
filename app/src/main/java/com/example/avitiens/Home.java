@@ -8,18 +8,19 @@ import android.view.View;
 import android.widget.ImageView;
 
 public class Home extends AppCompatActivity {
-    private ImageView imageView;
+    private ImageView dp;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
-        imageView=findViewById(R.id.cse);
+        dp=findViewById(R.id.dp);
 
-        imageView.setOnClickListener(new View.OnClickListener() {
+        dp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(Home.this,Dipartment.class));
+               startActivity(new Intent(Home.this,Dipartment.class));
+
             }
         });
     }

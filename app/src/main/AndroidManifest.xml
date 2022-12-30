@@ -13,9 +13,56 @@
         android:theme="@style/Theme.Avitiens"
         tools:targetApi="31">
         <activity
-            android:name=".syllabus"
-            android:label="Syllabus"
-            android:parentActivityName=".Dipartment"
+            android:name=".civilsubj"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".eeesubj"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".mechsubj"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".mechsem"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".csesubjpicture"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".csesubj"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".csesubject"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".csesem"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
@@ -23,9 +70,9 @@
         </activity>
         <activity
             android:name=".Dipartment"
+            android:exported="false"
             android:label="Dipartment"
-            android:parentActivityName=".Home"
-            android:exported="false">
+            android:parentActivityName=".Home">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />

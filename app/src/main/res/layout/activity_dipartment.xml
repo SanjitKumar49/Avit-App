@@ -7,7 +7,7 @@
     tools:context=".Dipartment">
 
     <LinearLayout
-        android:id="@+id/linearLayout"
+        android:id="@+id/l1"
         android:layout_width="409dp"
         android:layout_height="144dp"
         android:layout_marginTop="20dp"
@@ -33,17 +33,17 @@
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/linearLayout3"
+        android:id="@+id/l2"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+        app:layout_constraintTop_toBottomOf="@+id/l1">
 
         <TextView
-            android:id="@+id/cse"
+            android:id="@+id/cseview"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="30dp"
@@ -54,7 +54,7 @@
             android:textStyle="bold" />
 
         <TextView
-            android:id="@+id/mech"
+            android:id="@+id/mechview"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="30dp"
@@ -66,14 +66,14 @@
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/linearLayout1"
-        android:layout_width="409dp"
-        android:layout_height="144dp"
+        android:id="@+id/l3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
         android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout3">
+        app:layout_constraintTop_toBottomOf="@+id/l2">
 
         <ImageView
             android:id="@+id/eee"
@@ -91,36 +91,35 @@
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/linearLayout2"
+        android:id="@+id/l4"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout1">
+        app:layout_constraintTop_toBottomOf="@+id/l3">
 
         <TextView
-            android:id="@+id/cse"
-            android:layout_width="match_parent"
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="30dp"
-            android:layout_marginLeft="30dp"
             android:layout_weight="1"
+            android:paddingLeft="30dp"
             android:text="EEE"
             android:textSize="24sp"
             android:textStyle="bold" />
 
         <TextView
-            android:id="@+id/mech"
-            android:layout_width="match_parent"
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="30dp"
-            android:layout_marginLeft="30dp"
             android:layout_weight="1"
+            android:paddingLeft="30dp"
             android:text="Civil"
             android:textSize="24sp"
             android:textStyle="bold" />
     </LinearLayout>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

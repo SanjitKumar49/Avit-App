@@ -19,18 +19,19 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <ImageView
-            android:id="@+id/cse"
+            android:id="@+id/dp"
             android:layout_width="400dp"
             android:layout_height="133dp"
             android:layout_weight="1"
             app:srcCompat="@drawable/book" />
 
         <ImageView
-            android:id="@+id/mech"
+            android:id="@+id/question"
             android:layout_width="400dp"
             android:layout_height="133dp"
             android:layout_weight="1"
             app:srcCompat="@drawable/question" />
+
     </LinearLayout>
 
     <LinearLayout
@@ -43,26 +44,58 @@
         app:layout_constraintTop_toBottomOf="@+id/linearLayout">
 
         <TextView
-            android:id="@+id/cse"
-            android:layout_width="match_parent"
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="30dp"
-            android:layout_marginLeft="30dp"
             android:layout_weight="1"
-            android:text="Dipartment"
+            android:paddingLeft="25dp"
+            android:text="Syllabus"
             android:textSize="24sp"
             android:textStyle="bold" />
 
         <TextView
-            android:id="@+id/mech"
-            android:layout_width="match_parent"
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="30dp"
-            android:layout_marginLeft="30dp"
             android:layout_weight="1"
+            android:paddingLeft="25dp"
             android:text="Question Bank"
             android:textSize="24sp"
             android:textStyle="bold" />
+
     </LinearLayout>
+    <!--
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+            <TextView
+                android:id="@+id/cse"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_weight="1"
+                android:text="Dipartment"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/question"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_weight="1"
+                android:text="Question Bank"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+        -->
 
 </androidx.constraintlayout.widget.ConstraintLayout>
