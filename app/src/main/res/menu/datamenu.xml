@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/dev"
+        android:title="App Developer" />
+    <item
+        android:id="@+id/camu"
+        android:title="Camu App" />
+    <item android:title="Other..">
+        <menu>
+            <item
+                android:id="@+id/avit"
+                android:title="Avit Website" />
+            <item
+                android:id="@+id/vmrf"
+                android:title="Vmrf Website" />
+        </menu>
+    </item>
+</menu>

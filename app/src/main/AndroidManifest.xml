@@ -13,21 +13,21 @@
         android:theme="@style/Theme.Avitiens"
         tools:targetApi="31">
         <activity
-            android:name=".civilsubj"
+            android:name=".developerpage"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".eeesubj"
+            android:name=".webpage"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".mechsubj"
+            android:name=".questionpaper"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
@@ -73,30 +73,6 @@
             android:exported="false"
             android:label="Dipartment"
             android:parentActivityName=".Home">
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
-        </activity>
-        <activity
-            android:name=".firstpage"
-            android:exported="false">
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
-        </activity>
-        <activity
-            android:name=".Home"
-            android:exported="false"
-            android:label="Home">
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
-        </activity>
-        <activity
-            android:name=".SignUp"
-            android:exported="false"
-            android:label="SignUp"
-            android:parentActivityName=".firstpage">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />

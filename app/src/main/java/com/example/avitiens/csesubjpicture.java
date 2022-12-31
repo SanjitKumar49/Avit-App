@@ -31,8 +31,9 @@ public class csesubjpicture extends AppCompatActivity {
         imageView2 = findViewById(R.id.imageView2);
         final ProgressDialog p=new ProgressDialog(csesubjpicture.this);
         p.setTitle("Loading..");
-        p.show();;
-        String str = getIntent().getStringExtra("5sem");
+        p.show();
+
+        String str = getIntent().getStringExtra("datapass");
         {
             if (str.equals("ajp")) {
                 sf = FirebaseStorage.getInstance().getReference().child("cse/ajp.jpg");
@@ -117,9 +118,9 @@ public class csesubjpicture extends AppCompatActivity {
                     e.printStackTrace();
                 }
             } else if (str.equals("IMG_20221230_102847")) {
-                sf = FirebaseStorage.getInstance().getReference().child("cse/IMG_20221230_102847.jpg");
+                sf = FirebaseStorage.getInstance().getReference().child("cse/3sem/IMG_20221230_102847.jpg");
                 try {
-                    final File l = File.createTempFile("IMG_20221230_102847", "jpg");
+                    final File l = File.createTempFile("3sem/MG_20221230_102847", "jpg");
                     sf.getFile(l).addOnSuccessListener(new OnSuccessListener<FileDownloadTask.TaskSnapshot>() {
                         @Override
                         public void onSuccess(FileDownloadTask.TaskSnapshot taskSnapshot) {
@@ -282,6 +283,244 @@ public class csesubjpicture extends AppCompatActivity {
                     e.printStackTrace();
                 }
             }
+            else if (str.equals("IMG_20221231_002210")) {
+                sf = FirebaseStorage.getInstance().getReference().child("cse/3sem/IMG_20221231_002210.jpg");
+                try {
+                    final File localfile = File.createTempFile("IMG_20221231_002210", "jpg");
+                    sf.getFile(localfile).addOnSuccessListener(new OnSuccessListener<FileDownloadTask.TaskSnapshot>() {
+                        @Override
+                        public void onSuccess(FileDownloadTask.TaskSnapshot taskSnapshot) {
+                            Bitmap b = BitmapFactory.decodeFile(localfile.getAbsolutePath());
+                            imageView2.setImageBitmap(b);
+                            p.dismiss();
+                        }
+                    }).addOnFailureListener(new OnFailureListener() {
+                        @Override
+                        public void onFailure(@NonNull Exception e) {
+                            Toast.makeText(csesubjpicture.this, "Please Try Again..!", Toast.LENGTH_SHORT).show();
+                        }
+                    });
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+            else if (str.equals("IMG_20221231_002251")) {
+                sf = FirebaseStorage.getInstance().getReference().child("cse/3sem/IMG_20221231_002251.jpg");
+                try {
+                    final File localfile = File.createTempFile("IMG_20221231_002251", "jpg");
+                    sf.getFile(localfile).addOnSuccessListener(new OnSuccessListener<FileDownloadTask.TaskSnapshot>() {
+                        @Override
+                        public void onSuccess(FileDownloadTask.TaskSnapshot taskSnapshot) {
+                            Bitmap b = BitmapFactory.decodeFile(localfile.getAbsolutePath());
+                            imageView2.setImageBitmap(b);
+                            p.dismiss();
+                        }
+                    }).addOnFailureListener(new OnFailureListener() {
+                        @Override
+                        public void onFailure(@NonNull Exception e) {
+                            Toast.makeText(csesubjpicture.this, "Please Try Again..!", Toast.LENGTH_SHORT).show();
+                        }
+                    });
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+            else if (str.equals("IMG_20221231_002349")) {
+                sf = FirebaseStorage.getInstance().getReference().child("cse/3sem/IMG_20221231_002349.jpg");
+                try {
+                    final File localfile = File.createTempFile("IMG_20221231_002349", "jpg");
+                    sf.getFile(localfile).addOnSuccessListener(new OnSuccessListener<FileDownloadTask.TaskSnapshot>() {
+                        @Override
+                        public void onSuccess(FileDownloadTask.TaskSnapshot taskSnapshot) {
+                            Bitmap b = BitmapFactory.decodeFile(localfile.getAbsolutePath());
+                            imageView2.setImageBitmap(b);
+                            p.dismiss();
+                        }
+                    }).addOnFailureListener(new OnFailureListener() {
+                        @Override
+                        public void onFailure(@NonNull Exception e) {
+                            Toast.makeText(csesubjpicture.this, "Please Try Again..!", Toast.LENGTH_SHORT).show();
+                        }
+                    });
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+            else if (str.equals("IMG_20221231_002318")) {
+                sf = FirebaseStorage.getInstance().getReference().child("cse/3sem/IMG_20221231_002318.jpg");
+                try {
+                    final File localfile = File.createTempFile("IMG_20221231_002318", "jpg");
+                    sf.getFile(localfile).addOnSuccessListener(new OnSuccessListener<FileDownloadTask.TaskSnapshot>() {
+                        @Override
+                        public void onSuccess(FileDownloadTask.TaskSnapshot taskSnapshot) {
+                            Bitmap b = BitmapFactory.decodeFile(localfile.getAbsolutePath());
+                            imageView2.setImageBitmap(b);
+                            p.dismiss();
+                        }
+                    }).addOnFailureListener(new OnFailureListener() {
+                        @Override
+                        public void onFailure(@NonNull Exception e) {
+                            Toast.makeText(csesubjpicture.this, "Please Try Again..!", Toast.LENGTH_SHORT).show();
+                        }
+                    });
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+            else if (str.equals("IMG_20221231_004303")) {
+                sf = FirebaseStorage.getInstance().getReference().child("cse/3sem/IMG_20221231_004303.jpg");
+                try {
+                    final File localfile = File.createTempFile("IMG_20221231_004303", "jpg");
+                    sf.getFile(localfile).addOnSuccessListener(new OnSuccessListener<FileDownloadTask.TaskSnapshot>() {
+                        @Override
+                        public void onSuccess(FileDownloadTask.TaskSnapshot taskSnapshot) {
+                            Bitmap b = BitmapFactory.decodeFile(localfile.getAbsolutePath());
+                            imageView2.setImageBitmap(b);
+                            p.dismiss();
+                        }
+                    }).addOnFailureListener(new OnFailureListener() {
+                        @Override
+                        public void onFailure(@NonNull Exception e) {
+                            Toast.makeText(csesubjpicture.this, "Please Try Again..!", Toast.LENGTH_SHORT).show();
+                        }
+                    });
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+            else if (str.equals("IMG_20221231_004152")) {
+                sf = FirebaseStorage.getInstance().getReference().child("cse/3sem/IMG_20221231_004152.jpg");
+                try {
+                    final File localfile = File.createTempFile("IMG_20221231_004152", "jpg");
+                    sf.getFile(localfile).addOnSuccessListener(new OnSuccessListener<FileDownloadTask.TaskSnapshot>() {
+                        @Override
+                        public void onSuccess(FileDownloadTask.TaskSnapshot taskSnapshot) {
+                            Bitmap b = BitmapFactory.decodeFile(localfile.getAbsolutePath());
+                            imageView2.setImageBitmap(b);
+                            p.dismiss();
+                        }
+                    }).addOnFailureListener(new OnFailureListener() {
+                        @Override
+                        public void onFailure(@NonNull Exception e) {
+                            Toast.makeText(csesubjpicture.this, "Please Try Again..!", Toast.LENGTH_SHORT).show();
+                        }
+                    });
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+            else if (str.equals("IMG_20221231_004430")) {
+                sf = FirebaseStorage.getInstance().getReference().child("cse/7sem/IMG_20221231_004430.jpg");
+                try {
+                    final File localfile = File.createTempFile("IMG_20221231_004430", "jpg");
+                    sf.getFile(localfile).addOnSuccessListener(new OnSuccessListener<FileDownloadTask.TaskSnapshot>() {
+                        @Override
+                        public void onSuccess(FileDownloadTask.TaskSnapshot taskSnapshot) {
+                            Bitmap b = BitmapFactory.decodeFile(localfile.getAbsolutePath());
+                            imageView2.setImageBitmap(b);
+                            p.dismiss();
+                        }
+                    }).addOnFailureListener(new OnFailureListener() {
+                        @Override
+                        public void onFailure(@NonNull Exception e) {
+                            Toast.makeText(csesubjpicture.this, "Please Try Again..!", Toast.LENGTH_SHORT).show();
+                        }
+                    });
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+            else if (str.equals("IMG_20221231_004401")) {
+                sf = FirebaseStorage.getInstance().getReference().child("cse/7sem/IMG_20221231_004401.jpg");
+                try {
+                    final File localfile = File.createTempFile("IMG_20221231_004401", "jpg");
+                    sf.getFile(localfile).addOnSuccessListener(new OnSuccessListener<FileDownloadTask.TaskSnapshot>() {
+                        @Override
+                        public void onSuccess(FileDownloadTask.TaskSnapshot taskSnapshot) {
+                            Bitmap b = BitmapFactory.decodeFile(localfile.getAbsolutePath());
+                            imageView2.setImageBitmap(b);
+                            p.dismiss();
+                        }
+                    }).addOnFailureListener(new OnFailureListener() {
+                        @Override
+                        public void onFailure(@NonNull Exception e) {
+                            Toast.makeText(csesubjpicture.this, "Please Try Again..!", Toast.LENGTH_SHORT).show();
+                        }
+                    });
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+            else if (str.equals("IMG_20221231_004335")) {
+                sf = FirebaseStorage.getInstance().getReference().child("cse/7sem/IMG_20221231_004335.jpg");
+                try {
+                    final File localfile = File.createTempFile("IMG_20221231_004335", "jpg");
+                    sf.getFile(localfile).addOnSuccessListener(new OnSuccessListener<FileDownloadTask.TaskSnapshot>() {
+                        @Override
+                        public void onSuccess(FileDownloadTask.TaskSnapshot taskSnapshot) {
+                            Bitmap b = BitmapFactory.decodeFile(localfile.getAbsolutePath());
+                            imageView2.setImageBitmap(b);
+                            p.dismiss();
+                        }
+                    }).addOnFailureListener(new OnFailureListener() {
+                        @Override
+                        public void onFailure(@NonNull Exception e) {
+                            Toast.makeText(csesubjpicture.this, "Please Try Again..!", Toast.LENGTH_SHORT).show();
+                        }
+                    });
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+            // for 7sem
+            else if (str.equals("Firebase_DB_SnohTech")) {
+                sf = FirebaseStorage.getInstance().getReference().child("cse/7sem/Firebase_DB_SnohTech.pdf");
+                try {
+                    final File localfile = File.createTempFile("Firebase_DB_SnohTech", "pdf");
+                    sf.getFile(localfile).addOnSuccessListener(new OnSuccessListener<FileDownloadTask.TaskSnapshot>() {
+                        @Override
+                        public void onSuccess(FileDownloadTask.TaskSnapshot taskSnapshot) {
+                            Bitmap b = BitmapFactory.decodeFile(localfile.getAbsolutePath());
+                            imageView2.setImageBitmap(b);
+                            p.dismiss();
+                        }
+                    }).addOnFailureListener(new OnFailureListener() {
+                        @Override
+                        public void onFailure(@NonNull Exception e) {
+                            Toast.makeText(csesubjpicture.this, "Please Try Again..!", Toast.LENGTH_SHORT).show();
+                        }
+                    });
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+
+            //for fetching a data of question paper:
+            
+            else if (str.equals("IMG_20230101_034101")) {
+                sf = FirebaseStorage.getInstance().getReference().child("cse/5semq/IMG_20230101_034101.jpg");
+                try {
+                    final File localfile = File.createTempFile("IMG_20230101_034101", "jpg");
+                    sf.getFile(localfile).addOnSuccessListener(new OnSuccessListener<FileDownloadTask.TaskSnapshot>() {
+                        @Override
+                        public void onSuccess(FileDownloadTask.TaskSnapshot taskSnapshot) {
+                            Bitmap b = BitmapFactory.decodeFile(localfile.getAbsolutePath());
+                            imageView2.setImageBitmap(b);
+                            p.dismiss();
+                        }
+                    }).addOnFailureListener(new OnFailureListener() {
+                        @Override
+                        public void onFailure(@NonNull Exception e) {
+                            Toast.makeText(csesubjpicture.this, "Please Try Again..!", Toast.LENGTH_SHORT).show();
+                        }
+                    });
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+
+
+
 
         }
     }
