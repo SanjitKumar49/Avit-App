@@ -13,6 +13,43 @@
         android:theme="@style/Theme.Avitiens"
         tools:targetApi="31">
         <activity
+            android:name=".categoricheck"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".notesandquestion"
+            android:exported="false"
+            android:label="Notes|Subject">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".gym"
+            android:exported="false"
+            android:label="GYM">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".messview"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".avitmess"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name=".developerpage"
             android:exported="false">
             <meta-data
@@ -21,49 +58,32 @@
         </activity>
         <activity
             android:name=".webpage"
-            android:exported="false">
+            android:exported="false"
+            android:label="Web Page">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".questionpaper"
-            android:exported="false">
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
-        </activity>
-        <activity
-            android:name=".mechsem"
-            android:exported="false">
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
-        </activity>
-        <activity
-            android:name=".csesubjpicture"
-            android:exported="false">
+            android:name=".syllabusandsubject"
+            android:exported="false"
+            android:label="Subject|Syllabus">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
             android:name=".csesubj"
-            android:exported="false">
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
-        </activity>
-        <activity
-            android:name=".csesubject"
-            android:exported="false">
+            android:exported="false"
+            android:label="Subject">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
             android:name=".csesem"
-            android:exported="false">
+            android:exported="false"
+            android:label="Semester">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
@@ -71,15 +91,15 @@
         <activity
             android:name=".Dipartment"
             android:exported="false"
-            android:label="Dipartment"
-            android:parentActivityName=".Home">
+            android:label="Branch">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
             android:name=".MainActivity"
-            android:exported="true">
+            android:exported="true"
+            android:label="HOME">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

@@ -7,7 +7,6 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
-import android.widget.Toast;
 
 public class Dipartment extends AppCompatActivity {
     private ImageView cse,mech,eee,civil,ece,ai,cs,bme,pharma,biotech,mechatronics;
@@ -29,20 +28,20 @@ public class Dipartment extends AppCompatActivity {
         mech = findViewById(R.id.mechanical);
         civil = findViewById(R.id.civil);
 
-
-        String str = getIntent().getStringExtra("showallsyllabus");
+        String str = getIntent().getStringExtra("showallsyllabus");{
         if (str.equals("branch")) {
             cse.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    Intent intent = new Intent(Dipartment.this, csesem.class);
+                    Intent intent = new Intent(Dipartment.this, syllabusandsubject.class);
                     intent.putExtra("comman", "csed");
                     startActivity(intent);}
+
             });
             eee.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    Intent intent = new Intent(Dipartment.this, csesem.class);
+                    Intent intent = new Intent(Dipartment.this, syllabusandsubject.class);
                     intent.putExtra("comman", "eeed");
                     startActivity(intent);
                 }
@@ -90,7 +89,7 @@ public class Dipartment extends AppCompatActivity {
                 @Override
                 public void onClick(View view) {
                     Intent intent = new Intent(Dipartment.this, csesem.class);
-                    intent.putExtra("comman", "biptechd");
+                    intent.putExtra("comman", "biotechd");
                     startActivity(intent);
                 }
             });
@@ -119,13 +118,15 @@ public class Dipartment extends AppCompatActivity {
                 }
             });
         }
-        else if (str.equals("paper")){
+
+        else if (str.equals("paper")) {
             cse.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
                     Intent intent = new Intent(Dipartment.this, csesem.class);
                     intent.putExtra("comman", "csedp");
-                    startActivity(intent);}
+                    startActivity(intent);
+                }
             });
             eee.setOnClickListener(new View.OnClickListener() {
                 @Override
@@ -156,7 +157,8 @@ public class Dipartment extends AppCompatActivity {
                 public void onClick(View view) {
                     Intent intent = new Intent(Dipartment.this, csesem.class);
                     intent.putExtra("comman", "csdp");
-                    startActivity(intent);}
+                    startActivity(intent);
+                }
             });
             bme.setOnClickListener(new View.OnClickListener() {
                 @Override
@@ -206,6 +208,7 @@ public class Dipartment extends AppCompatActivity {
                     startActivity(intent);
                 }
             });
+        }
 
         }
     }

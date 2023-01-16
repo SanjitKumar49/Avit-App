@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Avitiens</string>
+    <string name="app_name">Aviten</string>
     <string name="title_activity_semester_cse">semester_cse</string>
     <!-- Strings used for fragments for navigation -->
     <string name="first_fragment_label">First Fragment</string>

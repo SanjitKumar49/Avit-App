@@ -18,9 +18,6 @@ import android.webkit.WebView;
 import android.webkit.WebViewClient;
 public class webpage extends AppCompatActivity {
     private WebView mywebView;
-
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -31,6 +28,7 @@ public class webpage extends AppCompatActivity {
         final ProgressDialog p=new ProgressDialog(webpage.this);
         p.setTitle("Loading..");
         p.show();
+        // my tool bar
         if (str.equals("https://www.mycamu.co.in/#/?action=chooseInstitution")) {
             mywebView.loadUrl("https://www.mycamu.co.in/#/?action=chooseInstitution");
             p.dismiss();
@@ -43,21 +41,10 @@ public class webpage extends AppCompatActivity {
             mywebView.loadUrl("https://vmrfdu.edu.in/");
             p.dismiss();
         }
+
         WebSettings webSettings = mywebView.getSettings();
         webSettings.setJavaScriptEnabled(true);
     }
-
-        public class mywebClient extends WebViewClient{
-            @Override
-            public void onPageStarted(WebView view, String url, Bitmap favicon){
-                super.onPageStarted(view,url,favicon);
-            }
-            @Override
-            public boolean shouldOverrideUrlLoading(WebView view,String url){
-                view.loadUrl(url);
-                return true;
-            }
-        }
         @Override
         public void onBackPressed(){
             if(mywebView.canGoBack()) {

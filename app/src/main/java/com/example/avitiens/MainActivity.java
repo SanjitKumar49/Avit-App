@@ -13,7 +13,7 @@ import android.widget.ImageView;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
-    private ImageView dp,question;
+    private ImageView dp,question,northind,southind,gym;
 
 
     @Override
@@ -22,10 +22,16 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         dp=findViewById(R.id.dp);
         question=findViewById(R.id.question);
+        northind=findViewById(R.id.northind);
+        southind=findViewById(R.id.southind);
+        gym=findViewById(R.id.gym);
+
+
 
         dp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                Toast.makeText(MainActivity.this, "its working", Toast.LENGTH_SHORT).show();
                 Intent intent=new Intent(MainActivity.this,Dipartment.class);
                 intent.putExtra("showallsyllabus","branch");
                 startActivity(intent);
@@ -39,6 +45,30 @@ public class MainActivity extends AppCompatActivity {
                 intent.putExtra("showallsyllabus","paper");
                 startActivity(intent);
 
+            }
+        });
+        northind.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent(MainActivity.this,avitmess.class);
+                intent.putExtra("weak","northind");
+                startActivity(intent);
+            }
+        });
+        southind.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent(MainActivity.this,avitmess.class);
+                intent.putExtra("weak","southind");
+                startActivity(intent);
+            }
+        });
+        gym.setOnClickListener(new View.OnClickListener() {
+           @Override
+           public void onClick(View view) {
+              Intent intent=new Intent(MainActivity.this,avitmess.class);
+                intent.putExtra("weak","gym");
+                startActivity(intent);
             }
         });
     }
