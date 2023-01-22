@@ -38,9 +38,9 @@ public class csesubj extends AppCompatActivity {
         sem3dmdw = findViewById(R.id.sem5dmdw);
 
         // for CSE dipartment to fetch the picture frome the database
-        String str = getIntent().getStringExtra("subject");
+        String str = getIntent().getStringExtra("allcse");
 
-      // For CSE Dipartment //
+                                 // For CSE Dipartment //
               //3rd sem
         if (str.equals("threesem")) {
             one.setText("OOPS");
@@ -154,8 +154,7 @@ public class csesubj extends AppCompatActivity {
                 }
             }
         }
-
-                // 4th sem
+             // 4th sem
         else if (str.equals("foursem")) {
             one.setText("java");
             {
@@ -268,267 +267,240 @@ public class csesubj extends AppCompatActivity {
                 }
             }
         }
-                 //5th
+           //5th sem
         else if (str.equals("fivesem")) {
-            sem3ajp.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View view) {
-                    Intent intent = new Intent(csesubj.this, syllabusandsubject.class);
-                    intent.putExtra("datapass", "ajp");
-                    startActivity(intent);
-                }
-            });
-            sem3cd.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View view) {
-                    Intent intent = new Intent(csesubj.this, syllabusandsubject.class);
-                    intent.putExtra("datapass", "IMG_20221230_133036");
-                    startActivity(intent);
-                }
-            });
-            sem3eh.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View view) {
-                    Intent intent = new Intent(csesubj.this, syllabusandsubject.class);
-                    intent.putExtra("datapass", "IMG_20221230_132933");
-                    startActivity(intent);
-                }
-            });
-            sem3ooad.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View view) {
-                    Intent intent = new Intent(csesubj.this, syllabusandsubject.class);
-                    intent.putExtra("datapass", "IMG_20221230_133003");
-                    startActivity(intent);
-                }
-            });
-            sem3dmm.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View view) {
-                    Intent intent = new Intent(csesubj.this, syllabusandsubject.class);
-                    intent.putExtra("datapass", "IMG_20221230_102847");
-                    startActivity(intent);
-                }
-            });
-            sem3dmdw.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View view) {
-                    Intent intent = new Intent(csesubj.this, syllabusandsubject.class);
-                    intent.putExtra("datapass", "IMG_20221230_131358");
-                    startActivity(intent);
-                }
-            });
-
-        }
-                 //6sem
-        else if (str.equals("sixsem")) {
-            one.setText("java");
+            one.setText("AJP");
             {
                 sem3ajp.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View view) {
-                        Intent intent = new Intent(csesubj.this, syllabusandsubject.class);
-                        intent.putExtra("datapass", "IMG_20221230_162305");
-                        startActivity(intent);
+                        String getUrl = "https://firebasestorage.googleapis.com/v0/b/avit-college.appspot.com/o/CSE%2F5sem%2FAJP%20NOTES.pdf?alt=media&token=b99ab9f3-f698-4f5f-8767-ed3e3db141ac";
+                        DownloadManager.Request request = new DownloadManager.Request(Uri.parse(getUrl));
+                        String title = URLUtil.guessFileName(getUrl, null, null);
+                        request.setTitle(title);
+                        request.setDescription("Download start...");
+                        String cookie = CookieManager.getInstance().getCookie(getUrl);
+                        request.addRequestHeader("cookie", cookie);
+                        request.setNotificationVisibility(DownloadManager.Request.VISIBILITY_VISIBLE_NOTIFY_COMPLETED);
+                        request.setDestinationInExternalPublicDir(Environment.DIRECTORY_DOWNLOADS, title);
+                        DownloadManager downloadManager = (DownloadManager) getSystemService(DOWNLOAD_SERVICE);
+                        downloadManager.enqueue(request);
+                        Toast.makeText(csesubj.this, "Wait Some Time,Your Requirement is processing...", Toast.LENGTH_SHORT).show();
                     }
                 });
             }
-            two.setText("CN");
+            two.setText("CD");
             {
                 sem3cd.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View view) {
-                        Intent intent = new Intent(csesubj.this, syllabusandsubject.class);
-                        intent.putExtra("datapass", "IMG_20221230_162245");
-                        startActivity(intent);
+                        String getUrl = "https://firebasestorage.googleapis.com/v0/b/avit-college.appspot.com/o/CSE%2F5sem%2FCD%20QA.docx?alt=media&token=e39273c1-7393-4c11-b129-78bf1a820495";
+                        DownloadManager.Request request = new DownloadManager.Request(Uri.parse(getUrl));
+                        String title = URLUtil.guessFileName(getUrl, null, null);
+                        request.setTitle(title);
+                        request.setDescription("Download start...");
+                        String cookie = CookieManager.getInstance().getCookie(getUrl);
+                        request.addRequestHeader("cookie", cookie);
+                        request.setNotificationVisibility(DownloadManager.Request.VISIBILITY_VISIBLE_NOTIFY_COMPLETED);
+                        request.setDestinationInExternalPublicDir(Environment.DIRECTORY_DOWNLOADS, title);
+                        DownloadManager downloadManager = (DownloadManager) getSystemService(DOWNLOAD_SERVICE);
+                        downloadManager.enqueue(request);
+                        Toast.makeText(csesubj.this, "Wait Some Time,Your Requirement is processing...", Toast.LENGTH_SHORT).show();
                     }
                 });
-
-                three.setText("OS");
-                {
-                    sem3eh.setOnClickListener(new View.OnClickListener() {
-                        @Override
-                        public void onClick(View view) {
-                            Intent intent = new Intent(csesubj.this, syllabusandsubject.class);
-                            intent.putExtra("datapass", "IMG_20221230_162217");
-                            startActivity(intent);
-                        }
-                    });
-                }
-                four.setText("PQT");
-                {
-                    sem3ooad.setOnClickListener(new View.OnClickListener() {
-                        @Override
-                        public void onClick(View view) {
-                            Intent intent = new Intent(csesubj.this, syllabusandsubject.class);
-                            intent.putExtra("datapass", "IMG_20221230_162016");
-                            startActivity(intent);
-                        }
-                    });
-                }
-                five.setText("Egile");
-                {
-                    sem3dmm.setOnClickListener(new View.OnClickListener() {
-                        @Override
-                        public void onClick(View view) {
-                            Intent intent = new Intent(csesubj.this, syllabusandsubject.class);
-                            intent.putExtra("datapass", "IMG_20221230_162501");
-                            startActivity(intent);
-                        }
-                    });
-                }
-                six.setText("EVS");
-                {
-                    sem3dmdw.setOnClickListener(new View.OnClickListener() {
-                        @Override
-                        public void onClick(View view) {
-                            Intent intent = new Intent(csesubj.this, syllabusandsubject.class);
-                            intent.putExtra("datapass", "IMG_20221230_162047");
-                            startActivity(intent);
-                        }
-                    });
-                }
             }
+            three.setText("EH");
+            {
+                sem3eh.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        String getUrl = "https://firebasestorage.googleapis.com/v0/b/avit-college.appspot.com/o/CSE%2F5sem%2FEH%20Notes.pdf?alt=media&token=7b2185ad-cc5d-4d92-aa0a-e407afc5eb3b";
+                        DownloadManager.Request request = new DownloadManager.Request(Uri.parse(getUrl));
+                        String title = URLUtil.guessFileName(getUrl, null, null);
+                        request.setTitle(title);
+                        request.setDescription("Download start...");
+                        String cookie = CookieManager.getInstance().getCookie(getUrl);
+                        request.addRequestHeader("cookie", cookie);
+                        request.setNotificationVisibility(DownloadManager.Request.VISIBILITY_VISIBLE_NOTIFY_COMPLETED);
+                        request.setDestinationInExternalPublicDir(Environment.DIRECTORY_DOWNLOADS, title);
+                        DownloadManager downloadManager = (DownloadManager) getSystemService(DOWNLOAD_SERVICE);
+                        downloadManager.enqueue(request);
+                        Toast.makeText(csesubj.this, "Wait Some Time,Your Requirement is processing...", Toast.LENGTH_SHORT).show();
+                    }
+                });
+            }
+            four.setText("DMDW");
+            {
+                sem3ooad.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        String getUrl = "https://firebasestorage.googleapis.com/v0/b/avit-college.appspot.com/o/CSE%2F5sem%2FDWDM.docx?alt=media&token=47d1a0e9-49de-4620-8139-0bc9f3a62f53";
+                        DownloadManager.Request request = new DownloadManager.Request(Uri.parse(getUrl));
+                        String title = URLUtil.guessFileName(getUrl, null, null);
+                        request.setTitle(title);
+                        request.setDescription("Download start...");
+                        String cookie = CookieManager.getInstance().getCookie(getUrl);
+                        request.addRequestHeader("cookie", cookie);
+                        request.setNotificationVisibility(DownloadManager.Request.VISIBILITY_VISIBLE_NOTIFY_COMPLETED);
+                        request.setDestinationInExternalPublicDir(Environment.DIRECTORY_DOWNLOADS, title);
+                        DownloadManager downloadManager = (DownloadManager) getSystemService(DOWNLOAD_SERVICE);
+                        downloadManager.enqueue(request);
+                        Toast.makeText(csesubj.this, "Wait Some Time,Your Requirement is processing...", Toast.LENGTH_SHORT).show();
+                    }
+                });
+            }
+            five.setText("OOAD");
+            {
+                sem3dmm.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        String getUrl = "https://firebasestorage.googleapis.com/v0/b/avit-college.appspot.com/o/CSE%2F5sem%2FOOAD.docx?alt=media&token=5a466449-d6a7-4a1f-9d57-f9a3902ff356";
+                        DownloadManager.Request request = new DownloadManager.Request(Uri.parse(getUrl));
+                        String title = URLUtil.guessFileName(getUrl, null, null);
+                        request.setTitle(title);
+                        request.setDescription("Download start...");
+                        String cookie = CookieManager.getInstance().getCookie(getUrl);
+                        request.addRequestHeader("cookie", cookie);
+                        request.setNotificationVisibility(DownloadManager.Request.VISIBILITY_VISIBLE_NOTIFY_COMPLETED);
+                        request.setDestinationInExternalPublicDir(Environment.DIRECTORY_DOWNLOADS, title);
+                        DownloadManager downloadManager = (DownloadManager) getSystemService(DOWNLOAD_SERVICE);
+                        downloadManager.enqueue(request);
+                        Toast.makeText(csesubj.this, "Wait Some Time,Your Requirement is processing...", Toast.LENGTH_SHORT).show();
+                    }
+                });
+            }
+            six.setText("DMM");
+            {
+                sem3dmdw.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        String getUrl = "https://firebasestorage.googleapis.com/v0/b/avit-college.appspot.com/o/CSE%2F5sem%2Fdisaster%20management%20notes.pdf?alt=media&token=605aa534-0a9c-4781-8699-7fc9115ad1d6";
+                        DownloadManager.Request request = new DownloadManager.Request(Uri.parse(getUrl));
+                        String title = URLUtil.guessFileName(getUrl, null, null);
+                        request.setTitle(title);
+                        request.setDescription("Download start...");
+                        String cookie = CookieManager.getInstance().getCookie(getUrl);
+                        request.addRequestHeader("cookie", cookie);
+                        request.setNotificationVisibility(DownloadManager.Request.VISIBILITY_VISIBLE_NOTIFY_COMPLETED);
+                        request.setDestinationInExternalPublicDir(Environment.DIRECTORY_DOWNLOADS, title);
+                        DownloadManager downloadManager = (DownloadManager) getSystemService(DOWNLOAD_SERVICE);
+                        downloadManager.enqueue(request);
+                        Toast.makeText(csesubj.this, "Wait Some Time,Your Requirement is processing...", Toast.LENGTH_SHORT).show();
+                    }
+                });
+            }
+
         }
-               //7sem
-        else if (str.equals("sevensem")){
-            one.setText("RIA");
+
+                                // For EEE Dipartment //
+        //3rd sem
+        if (str.equals("firstsemeee")) {
+            one.setText("EEE");
             {
                 sem3ajp.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View view) {
-                        Intent intent = new Intent(csesubj.this, syllabusandsubject.class);
-                        intent.putExtra("datapass", "IMG_20221231_004430");
-                        startActivity(intent);
+                        String getUrl = "https://firebasestorage.googleapis.com/v0/b/avit-college.appspot.com/o/CSE%2F3sem%2FOOPS%20Notes.pdf?alt=media&token=51234ae4-32fb-4856-805c-e4d49f46ebd4";
+                        DownloadManager.Request request = new DownloadManager.Request(Uri.parse(getUrl));
+                        String title = URLUtil.guessFileName(getUrl, null, null);
+                        request.setTitle(title);
+                        request.setDescription("Download start...");
+                        String cookie = CookieManager.getInstance().getCookie(getUrl);
+                        request.addRequestHeader("cookie", cookie);
+                        request.setNotificationVisibility(DownloadManager.Request.VISIBILITY_VISIBLE_NOTIFY_COMPLETED);
+                        request.setDestinationInExternalPublicDir(Environment.DIRECTORY_DOWNLOADS, title);
+                        DownloadManager downloadManager = (DownloadManager) getSystemService(DOWNLOAD_SERVICE);
+                        downloadManager.enqueue(request);
+                        Toast.makeText(csesubj.this, "Wait Some Time,Your Requirement is processing...", Toast.LENGTH_SHORT).show();
                     }
+
                 });
-            }
-            two.setText("CC");
+            }two.setText("EEEone");
             {
                 sem3cd.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View view) {
-                        Intent intent = new Intent(csesubj.this, syllabusandsubject.class);
-                        intent.putExtra("datapass", "IMG_20221231_004401");
-                        startActivity(intent);
+                        String getUrl = "https://firebasestorage.googleapis.com/v0/b/avit-college.appspot.com/o/CSE%2F3sem%2FDBMS%20Notes.pdf?alt=media&token=aedeca79-211f-4ce8-b20a-10fc82de60f4";
+                        DownloadManager.Request request = new DownloadManager.Request(Uri.parse(getUrl));
+                        String title = URLUtil.guessFileName(getUrl, null, null);
+                        request.setTitle(title);
+                        request.setDescription("Download start...");
+                        String cookie = CookieManager.getInstance().getCookie(getUrl);
+                        request.addRequestHeader("cookie", cookie);
+                        request.setNotificationVisibility(DownloadManager.Request.VISIBILITY_VISIBLE_NOTIFY_COMPLETED);
+                        request.setDestinationInExternalPublicDir(Environment.DIRECTORY_DOWNLOADS, title);
+                        DownloadManager downloadManager = (DownloadManager) getSystemService(DOWNLOAD_SERVICE);
+                        downloadManager.enqueue(request);
+                        Toast.makeText(csesubj.this, "Wait Some Time,Your Requirement is processing...", Toast.LENGTH_SHORT).show();
                     }
                 });
 
-                three.setText("BI&A");
+                three.setText("DAA");
                 {
                     sem3eh.setOnClickListener(new View.OnClickListener() {
                         @Override
                         public void onClick(View view) {
-                            Intent intent = new Intent(csesubj.this, syllabusandsubject.class);
-                            intent.putExtra("datapass", "IMG_20221231_004335");
-                            startActivity(intent);
+                            String getUrl = "https://firebasestorage.googleapis.com/v0/b/avit-college.appspot.com/o/CSE%2F3sem%2FDAA%20NOTES.pdf?alt=media&token=d0eb0e74-e455-4d88-9383-d7c760dc4acd";
+                            DownloadManager.Request request = new DownloadManager.Request(Uri.parse(getUrl));
+                            String title = URLUtil.guessFileName(getUrl, null, null);
+                            request.setTitle(title);
+                            request.setDescription("Download start...");
+                            String cookie = CookieManager.getInstance().getCookie(getUrl);
+                            request.addRequestHeader("cookie", cookie);
+                            request.setNotificationVisibility(DownloadManager.Request.VISIBILITY_VISIBLE_NOTIFY_COMPLETED);
+                            request.setDestinationInExternalPublicDir(Environment.DIRECTORY_DOWNLOADS, title);
+                            DownloadManager downloadManager = (DownloadManager) getSystemService(DOWNLOAD_SERVICE);
+                            downloadManager.enqueue(request);
+                            Toast.makeText(csesubj.this, "Wait Some Time,Your Requirement is processing...", Toast.LENGTH_SHORT).show();
                         }
                     });
                 }
-                four.setText("AP");
+                four.setText("CA");
                 {
                     sem3ooad.setOnClickListener(new View.OnClickListener() {
                         @Override
                         public void onClick(View view) {
-                            Toast.makeText(csesubj.this, "Syllabus  not available ", Toast.LENGTH_SHORT).show();
-
-                           // Intent intent = new Intent(csesubj.this, csesubjpicture.class);
-                            //intent.putExtra("datapass", "Firebase_DB_SnohTech");
-                           // startActivity(intent);
+                            String getUrl = "https://firebasestorage.googleapis.com/v0/b/avit-college.appspot.com/o/CSE%2F3sem%2FCA%20Notes.pdf?alt=media&token=295026e4-ae17-4afe-9494-0e0903a2abfb";
+                            DownloadManager.Request request = new DownloadManager.Request(Uri.parse(getUrl));
+                            String title = URLUtil.guessFileName(getUrl, null, null);
+                            request.setTitle(title);
+                            request.setDescription("Download start...");
+                            String cookie = CookieManager.getInstance().getCookie(getUrl);
+                            request.addRequestHeader("cookie", cookie);
+                            request.setNotificationVisibility(DownloadManager.Request.VISIBILITY_VISIBLE_NOTIFY_COMPLETED);
+                            request.setDestinationInExternalPublicDir(Environment.DIRECTORY_DOWNLOADS, title);
+                            DownloadManager downloadManager = (DownloadManager) getSystemService(DOWNLOAD_SERVICE);
+                            downloadManager.enqueue(request);
+                            Toast.makeText(csesubj.this, "Wait Some Time,Your Requirement is processing...", Toast.LENGTH_SHORT).show();
                         }
                     });
                 }
-                five.setText("SC");
+                five.setText("SE");
                 {
                     sem3dmm.setOnClickListener(new View.OnClickListener() {
                         @Override
                         public void onClick(View view) {
-                            Toast.makeText(csesubj.this, "Syllabus is not available ", Toast.LENGTH_SHORT).show();
-                      Intent intent = new Intent(csesubj.this, syllabusandsubject.class);
-                       intent.putExtra("datapass", "IMG_20221230_162501");
-                       startActivity(intent);
+                            Toast.makeText(csesubj.this, "Sorry Data is Unavailable", Toast.LENGTH_SHORT).show();
                         }
                     });
                 }
-                six.setText("NULL");
+                six.setText("NM&NT");
                 {
                     sem3dmdw.setOnClickListener(new View.OnClickListener() {
                         @Override
                         public void onClick(View view) {
-                            Toast.makeText(csesubj.this, "Subject Over.", Toast.LENGTH_SHORT).show();
-                           //Intent intent = new Intent(csesubj.this, csesubjpicture.class);
-                     // intent.putExtra("datapass", "IMG_20221230_162047");
-                     //  startActivity(intent);
-                        }
-                    });
-                }
-            }
-        }
-               //8sem
-        else if (str.equals("eightsem")) {
-            one.setText("java");
-            {
-                sem3ajp.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View view) {
-                        Intent intent = new Intent(csesubj.this, syllabusandsubject.class);
-                        intent.putExtra("datapass", "IMG_20221230_162305");
-                        startActivity(intent);
-                    }
-                });
-            }
-            two.setText("CN");
-            {
-                sem3cd.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View view) {
-                        Intent intent = new Intent(csesubj.this, syllabusandsubject.class);
-                        intent.putExtra("datapass", "IMG_20221230_162245");
-                        startActivity(intent);
-                    }
-                });
-
-                three.setText("OS");
-                {
-                    sem3eh.setOnClickListener(new View.OnClickListener() {
-                        @Override
-                        public void onClick(View view) {
-                            Intent intent = new Intent(csesubj.this, syllabusandsubject.class);
-                            intent.putExtra("datapass", "IMG_20221230_162217");
-                            startActivity(intent);
-                        }
-                    });
-                }
-                four.setText("PQT");
-                {
-                    sem3ooad.setOnClickListener(new View.OnClickListener() {
-                        @Override
-                        public void onClick(View view) {
-                            Intent intent = new Intent(csesubj.this, syllabusandsubject.class);
-                            intent.putExtra("datapass", "IMG_20221230_162016");
-                            startActivity(intent);
-                        }
-                    });
-                }
-                five.setText("Egile");
-                {
-                    sem3dmm.setOnClickListener(new View.OnClickListener() {
-                        @Override
-                        public void onClick(View view) {
-                            Intent intent = new Intent(csesubj.this, syllabusandsubject.class);
-                            intent.putExtra("datapass", "IMG_20221230_162501");
-                            startActivity(intent);
-                        }
-                    });
-                }
-                six.setText("EVS");
-                {
-                    sem3dmdw.setOnClickListener(new View.OnClickListener() {
-                        @Override
-                        public void onClick(View view) {
-                            Intent intent = new Intent(csesubj.this, syllabusandsubject.class);
-                            intent.putExtra("datapass", "IMG_20221230_162047");
-                            startActivity(intent);
+                            String getUrl = "https://firebasestorage.googleapis.com/v0/b/avit-college.appspot.com/o/CSE%2F3sem%2FNM%26NT%20Notes.pdf?alt=media&token=d2a16e6d-9b26-435d-bf3c-b86e5adf76af";
+                            DownloadManager.Request request = new DownloadManager.Request(Uri.parse(getUrl));
+                            String title = URLUtil.guessFileName(getUrl, null, null);
+                            request.setTitle(title);
+                            request.setDescription("Download start...");
+                            String cookie = CookieManager.getInstance().getCookie(getUrl);
+                            request.addRequestHeader("cookie", cookie);
+                            request.setNotificationVisibility(DownloadManager.Request.VISIBILITY_VISIBLE_NOTIFY_COMPLETED);
+                            request.setDestinationInExternalPublicDir(Environment.DIRECTORY_DOWNLOADS, title);
+                            DownloadManager downloadManager = (DownloadManager) getSystemService(DOWNLOAD_SERVICE);
+                            downloadManager.enqueue(request);
+                            Toast.makeText(csesubj.this, "Wait Some Time,Your Requirement is processing...", Toast.LENGTH_SHORT).show();
                         }
                     });
                 }

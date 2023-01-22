@@ -50,7 +50,7 @@ public class avitmess extends AppCompatActivity {
                 @Override
                 public void onClick(View view) {
                     Intent intent = new Intent(avitmess.this, categoricheck.class);
-                    intent.putExtra("ind","nort3");
+                    intent.putExtra("ind","north3");
                     startActivity(intent);
 
                 }
@@ -59,7 +59,7 @@ public class avitmess extends AppCompatActivity {
                 @Override
                 public void onClick(View view) {
                     Intent intent = new Intent(avitmess.this, categoricheck.class);
-                    intent.putExtra("ind","nort4");
+                    intent.putExtra("ind","north4");
                     startActivity(intent);
 
                 }
@@ -92,6 +92,7 @@ public class avitmess extends AppCompatActivity {
                 }
             });
         }
+        //  for south
         else if (str.equals("southind")){
             mon.setOnClickListener(new View.OnClickListener() {
                 @Override
@@ -115,7 +116,7 @@ public class avitmess extends AppCompatActivity {
                 @Override
                 public void onClick(View view) {
                     Intent intent = new Intent(avitmess.this, categoricheck.class);
-                    intent.putExtra("ind","nort3");
+                    intent.putExtra("ind","south3");
                     startActivity(intent);
 
                 }
@@ -124,7 +125,7 @@ public class avitmess extends AppCompatActivity {
                 @Override
                 public void onClick(View view) {
                     Intent intent = new Intent(avitmess.this, categoricheck.class);
-                    intent.putExtra("ind","nort4");
+                    intent.putExtra("ind","south5");
                     startActivity(intent);
 
                 }
@@ -133,7 +134,7 @@ public class avitmess extends AppCompatActivity {
                 @Override
                 public void onClick(View view) {
                     Intent intent = new Intent(avitmess.this, categoricheck.class);
-                    intent.putExtra("ind","north5");
+                    intent.putExtra("ind","south5");
                     startActivity(intent);
 
                 }
@@ -142,7 +143,7 @@ public class avitmess extends AppCompatActivity {
                 @Override
                 public void onClick(View view) {
                     Intent intent = new Intent(avitmess.this, categoricheck.class);
-                    intent.putExtra("ind","north6");
+                    intent.putExtra("ind","south6");
                     startActivity(intent);
 
                 }
@@ -151,7 +152,7 @@ public class avitmess extends AppCompatActivity {
                 @Override
                 public void onClick(View view) {
                     Intent intent = new Intent(avitmess.this, categoricheck.class);
-                    intent.putExtra("ind","north7");
+                    intent.putExtra("ind","south7");
                     startActivity(intent);
 
                 }
@@ -210,8 +211,7 @@ public class avitmess extends AppCompatActivity {
             sun.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    Intent intent = new Intent(avitmess.this, gym.class);
-                    startActivity(intent);
+                    Toast.makeText(avitmess.this, "Today is Holiday...!", Toast.LENGTH_SHORT).show();
 
                 }
             });

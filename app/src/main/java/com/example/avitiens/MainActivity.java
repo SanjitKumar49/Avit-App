@@ -1,6 +1,5 @@
 package com.example.avitiens;
 
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -10,10 +9,9 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageView;
-import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
-    private ImageView dp,question,northind,southind,gym;
+    private ImageView dp,question,northind,southind,gym,location,canteen;
 
 
     @Override
@@ -25,13 +23,12 @@ public class MainActivity extends AppCompatActivity {
         northind=findViewById(R.id.northind);
         southind=findViewById(R.id.southind);
         gym=findViewById(R.id.gym);
-
-
+        location=findViewById(R.id.location);
+        canteen=findViewById(R.id.canteen);
 
         dp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(MainActivity.this, "its working", Toast.LENGTH_SHORT).show();
                 Intent intent=new Intent(MainActivity.this,Dipartment.class);
                 intent.putExtra("showallsyllabus","branch");
                 startActivity(intent);
@@ -69,6 +66,22 @@ public class MainActivity extends AppCompatActivity {
               Intent intent=new Intent(MainActivity.this,avitmess.class);
                 intent.putExtra("weak","gym");
                 startActivity(intent);
+            }
+        });
+        location.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent(MainActivity.this,webpage.class);
+                intent.putExtra("web","https://www.google.com/maps/place/AARUPADAI+VEEDU+INSTITUTE+OF+TECHNOLOGY/@12.65669,80.1801109,15z/data=!4m5!3m4!1s0x0:0xbf0f1882c4b4ceb1!8m2!3d12.65669!4d80.1801109");
+                startActivity(intent);
+            }
+        });
+        canteen.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent(MainActivity.this, com.example.avitiens.canteen.class);
+                startActivity(intent);
+
             }
         });
     }

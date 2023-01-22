@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class categoricheck extends AppCompatActivity {
@@ -19,6 +20,7 @@ public class categoricheck extends AppCompatActivity {
         imageView3 = findViewById(R.id.imageView3);
         imageView4 = findViewById(R.id.imageView4);
         imageView5 = findViewById(R.id.imageView5);
+
         String str = getIntent().getStringExtra("ind");
         // north- monday
         if (str.equals("north1")) {
@@ -265,6 +267,9 @@ public class categoricheck extends AppCompatActivity {
                 }
             });
         }
+
+
+        // for south
         else if (str.equals("south1")) {
             {
                 imageView2.setOnClickListener(new View.OnClickListener() {
@@ -337,5 +342,186 @@ public class categoricheck extends AppCompatActivity {
                 });
             }
         }
+        else if (str.equals("south3")) {
+            {
+                imageView2.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        Intent intent = new Intent(categoricheck.this, messview.class);
+                        intent.putExtra("text", "break33");
+                        startActivity(intent);
+                    }
+                });
+                imageView3.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        Intent intent = new Intent(categoricheck.this, messview.class);
+                        intent.putExtra("text", "lunch33");
+                        startActivity(intent);
+                    }
+                });
+                imageView4.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        Intent intent = new Intent(categoricheck.this, messview.class);
+                        intent.putExtra("text", "snack33");
+                        startActivity(intent);
+                    }
+                });
+                imageView5.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        Intent intent = new Intent(categoricheck.this, messview.class);
+                        intent.putExtra("text", "dinner33");
+                        startActivity(intent);
+                    }
+                });
+            }
+        }
+        else if (str.equals("south4")) {
+            {
+                imageView2.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        Intent intent = new Intent(categoricheck.this, messview.class);
+                        intent.putExtra("text", "break44");
+                        startActivity(intent);
+                    }
+                });
+                imageView3.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        Intent intent = new Intent(categoricheck.this, messview.class);
+                        intent.putExtra("text", "lunch44");
+                        startActivity(intent);
+                    }
+                });
+                imageView4.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        Intent intent = new Intent(categoricheck.this, messview.class);
+                        intent.putExtra("text", "snack44");
+                        startActivity(intent);
+                    }
+                });
+                imageView5.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        Intent intent = new Intent(categoricheck.this, messview.class);
+                        intent.putExtra("text", "dinner44");
+                        startActivity(intent);
+                    }
+                });
+            }
+        }
+        else if (str.equals("south5")) {
+            {
+                imageView2.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        Intent intent = new Intent(categoricheck.this, messview.class);
+                        intent.putExtra("text", "break55");
+                        startActivity(intent);
+                    }
+                });
+                imageView3.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        Intent intent = new Intent(categoricheck.this, messview.class);
+                        intent.putExtra("text", "lunch55");
+                        startActivity(intent);
+                    }
+                });
+                imageView4.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        Intent intent = new Intent(categoricheck.this, messview.class);
+                        intent.putExtra("text", "snack55");
+                        startActivity(intent);
+                    }
+                });
+                imageView5.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        Intent intent = new Intent(categoricheck.this, messview.class);
+                        intent.putExtra("text", "dinner55");
+                        startActivity(intent);
+                    }
+                });
+            }
+        }
+        else if (str.equals("south6")) {
+            {
+                imageView2.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        Intent intent = new Intent(categoricheck.this, messview.class);
+                        intent.putExtra("text", "break66");
+                        startActivity(intent);
+                    }
+                });
+                imageView3.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        Intent intent = new Intent(categoricheck.this, messview.class);
+                        intent.putExtra("text", "lunch66");
+                        startActivity(intent);
+                    }
+                });
+                imageView4.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        Intent intent = new Intent(categoricheck.this, messview.class);
+                        intent.putExtra("text", "snack66");
+                        startActivity(intent);
+                    }
+                });
+                imageView5.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        Intent intent = new Intent(categoricheck.this, messview.class);
+                        intent.putExtra("text", "dinner66");
+                        startActivity(intent);
+                    }
+                });
+            }
+        }
+        else if (str.equals("south7")) {
+            {
+                imageView2.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        Intent intent = new Intent(categoricheck.this, messview.class);
+                        intent.putExtra("text", "break77");
+                        startActivity(intent);
+                    }
+                });
+                imageView3.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        Intent intent = new Intent(categoricheck.this, messview.class);
+                        intent.putExtra("text", "lunch77");
+                        startActivity(intent);
+                    }
+                });
+                imageView4.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        Intent intent = new Intent(categoricheck.this, messview.class);
+                        intent.putExtra("text", "snack77");
+                        startActivity(intent);
+                    }
+                });
+                imageView5.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        Intent intent = new Intent(categoricheck.this, messview.class);
+                        intent.putExtra("text", "dinner77");
+                        startActivity(intent);
+                    }
+                });
+            }
+        }
+
     }
 }

@@ -33,26 +33,27 @@ public class csesem extends AppCompatActivity {
         sem8=findViewById(R.id.sem8);
 
 
-        String str = getIntent().getStringExtra("comman");
+       // String str = getIntent().getStringExtra("comman");
+        String str = getIntent().getStringExtra("subject");
         {
-            if (str.equals("csedp")){
+            if (str.equals("cse")){
                 sem1.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View view) {
-                        Toast.makeText(csesem.this, "wait some time", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(csesem.this, "wait some time,Work in Progress...!", Toast.LENGTH_SHORT).show();
                     }
                 });
                 sem2.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View view) {
-                        Toast.makeText(csesem.this, "wait some time", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(csesem.this, "Wait Some Time,Work In Progress...!", Toast.LENGTH_SHORT).show();
 
                     }
                 });
                 sem3.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View view) {
-                        Intent intent=new Intent(csesem.this,notesandquestion.class);
+                        Intent intent=new Intent(csesem.this,csesubj.class);
                         intent.putExtra("allcse","threesem");
                         startActivity(intent);
                     }
@@ -60,7 +61,7 @@ public class csesem extends AppCompatActivity {
                 sem4.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View view) {
-                        Intent intent=new Intent(csesem.this,notesandquestion.class);
+                        Intent intent=new Intent(csesem.this,csesubj.class);
                         intent.putExtra("allcse","foursem");
                         startActivity(intent);
                     }
@@ -68,7 +69,7 @@ public class csesem extends AppCompatActivity {
                 sem5.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View view) {
-                        Intent intent=new Intent(csesem.this,notesandquestion.class);
+                        Intent intent=new Intent(csesem.this,csesubj.class);
                         intent.putExtra("allcse","fivesem");
                         startActivity(intent);
                     }
@@ -76,7 +77,7 @@ public class csesem extends AppCompatActivity {
                 sem6.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View view) {
-                        Intent intent=new Intent(csesem.this,notesandquestion.class);
+                        Intent intent=new Intent(csesem.this,csesubj.class);
                         intent.putExtra("allcse","sixsem");
                         startActivity(intent);
                     }
@@ -85,7 +86,7 @@ public class csesem extends AppCompatActivity {
                 sem7.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View view) {
-                        Intent intent=new Intent(csesem.this,notesandquestion.class);
+                        Intent intent=new Intent(csesem.this,csesubj.class);
                         intent.putExtra("allcse","sevensem");
                         startActivity(intent);
                     }
@@ -93,210 +94,191 @@ public class csesem extends AppCompatActivity {
                 sem8.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View view) {
-                        Intent intent=new Intent(csesem.this,notesandquestion.class);
+                        Intent intent=new Intent(csesem.this,csesubj.class);
                         intent.putExtra("allcse","eightsem");
                         startActivity(intent);
                     }
                 });
             }
-            else if (str.equals("eeed")){
+            else if (str.equals("eee")){
                 sem1.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View view) {
-                        Toast.makeText(csesem.this, "wait some time", Toast.LENGTH_SHORT).show();
+//                        Intent intent=new Intent(csesem.this,csesubj.class);
+//                        intent.putExtra("allcse","firstsemeee");
+//                        startActivity(intent);
+                        Toast.makeText(csesem.this, "wait some time,Work in Progress...!", Toast.LENGTH_SHORT).show();
                     }
                 });
                 sem2.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View view) {
-                        Toast.makeText(csesem.this, "wait some time", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(csesem.this, "wait some time,Work in Progress...!", Toast.LENGTH_SHORT).show();
 
                     }
                 });
            sem3.setOnClickListener(new View.OnClickListener() {
                @Override
                public void onClick(View view) {
-                   Intent intent=new Intent(csesem.this,csesubj.class);
-                   intent.putExtra("alleee","threesem");
-                   startActivity(intent);
+                   Toast.makeText(csesem.this, "wait some time,Work in Progress...!", Toast.LENGTH_SHORT).show();
                }
            });
            sem4.setOnClickListener(new View.OnClickListener() {
                @Override
                public void onClick(View view) {
-                   Intent intent=new Intent(csesem.this,csesubj.class);
-                   intent.putExtra("alleee","foursem");
-                   startActivity(intent);
+//                   Intent intent=new Intent(csesem.this,csesubj.class);
+//                   intent.putExtra("alleee","foursem");
+//                   startActivity(intent);
+                   Toast.makeText(csesem.this, "wait some time,Work in Progress...!", Toast.LENGTH_SHORT).show();
                }
            });
            sem5.setOnClickListener(new View.OnClickListener() {
                @Override
                public void onClick(View view) {
-                   Intent intent=new Intent(csesem.this,csesubj.class);
-                   intent.putExtra("alleee","fivesem");
-                   startActivity(intent);
+//                   Intent intent=new Intent(csesem.this,csesubj.class);
+//                   intent.putExtra("alleee","fivesem");
+//                   startActivity(intent);
+                   Toast.makeText(csesem.this, "wait some time,Work in Progress...!", Toast.LENGTH_SHORT).show();
                }
            });
            sem6.setOnClickListener(new View.OnClickListener() {
                @Override
                public void onClick(View view) {
-                   Intent intent=new Intent(csesem.this,csesubj.class);
-                   intent.putExtra("alleee","sixsem");
-                   startActivity(intent);
+//                   Intent intent=new Intent(csesem.this,csesubj.class);
+//                   intent.putExtra("alleee","sixsem");
+//                   startActivity(intent);
+                   Toast.makeText(csesem.this, "wait some time,Work in Progress...!", Toast.LENGTH_SHORT).show();
                }
            });
            sem7.setOnClickListener(new View.OnClickListener() {
                @Override
                public void onClick(View view) {
-                   Intent intent=new Intent(csesem.this,csesubj.class);
-                   intent.putExtra("alleee","sevensem");
-                   startActivity(intent);
+//                   Intent intent=new Intent(csesem.this,csesubj.class);
+//                   intent.putExtra("alleee","sevensem");
+//                   startActivity(intent);
+                   Toast.makeText(csesem.this, "wait some time,Work in Progress...!", Toast.LENGTH_SHORT).show();
                }
            });
            sem8.setOnClickListener(new View.OnClickListener() {
                @Override
                public void onClick(View view) {
-                   Intent intent=new Intent(csesem.this,csesubj.class);
-                   intent.putExtra("alleee","eightsem");
-                   startActivity(intent);
+//                   Intent intent=new Intent(csesem.this,csesubj.class);
+//                   intent.putExtra("alleee","eightsem");
+//                   startActivity(intent);
+                   Toast.makeText(csesem.this, "wait some time,Work in Progress...!", Toast.LENGTH_SHORT).show();
                }
            });
        }
-            else if (str.equals("eced")){
+            else if (str.equals("ece")){
                 sem1.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View view) {
-                        Toast.makeText(csesem.this, "wait some time", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(csesem.this, "wait some time,Work in Progress...!", Toast.LENGTH_SHORT).show();
                     }
                 });
                 sem2.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View view) {
-                        Toast.makeText(csesem.this, "wait some time", Toast.LENGTH_SHORT).show();
-
+                        Toast.makeText(csesem.this, "wait some time,Work in Progress...!", Toast.LENGTH_SHORT).show();
                     }
                 });
            sem3.setOnClickListener(new View.OnClickListener() {
                @Override
                public void onClick(View view) {
-                   Intent intent=new Intent(csesem.this,csesubj.class);
-                   intent.putExtra("allece","threesem");
-                   startActivity(intent);
+                   Toast.makeText(csesem.this, "wait some time,Work in Progress...!", Toast.LENGTH_SHORT).show();
                }
            });
            sem4.setOnClickListener(new View.OnClickListener() {
                @Override
                public void onClick(View view) {
-                   Intent intent=new Intent(csesem.this,csesubj.class);
-                   intent.putExtra("allece","foursem");
-                   startActivity(intent);
+                   Toast.makeText(csesem.this, "wait some time,Work in Progress...!", Toast.LENGTH_SHORT).show();
                }
            });
            sem5.setOnClickListener(new View.OnClickListener() {
                @Override
                public void onClick(View view) {
-                   Intent intent=new Intent(csesem.this,csesubj.class);
-                   intent.putExtra("allece","fivesem");
-                   startActivity(intent);
+                   Toast.makeText(csesem.this, "wait some time,Work in Progress...!", Toast.LENGTH_SHORT).show();
+
                }
            });
            sem6.setOnClickListener(new View.OnClickListener() {
                @Override
                public void onClick(View view) {
-                   Intent intent=new Intent(csesem.this,csesubj.class);
-                   intent.putExtra("allece","sixsem");
-                   startActivity(intent);
-               }
-           });
-
-           sem7.setOnClickListener(new View.OnClickListener() {
-               @Override
-               public void onClick(View view) {
-                   Intent intent=new Intent(csesem.this,csesubj.class);
-                   intent.putExtra("allece","sevensem");
-                   startActivity(intent);
-               }
-           });
-           sem8.setOnClickListener(new View.OnClickListener() {
-               @Override
-               public void onClick(View view) {
-                   Intent intent=new Intent(csesem.this,csesubj.class);
-                   intent.putExtra("allece","eightsem");
-                   startActivity(intent);
-               }
-           });
-       }
-             else if (str.equals("aid")){
-                sem1.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View view) {
-                        Toast.makeText(csesem.this, "wait some time", Toast.LENGTH_SHORT).show();
-                    }
-                });
-                sem2.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View view) {
-                        Toast.makeText(csesem.this, "wait some time", Toast.LENGTH_SHORT).show();
-
-                    }
-                });
-           sem3.setOnClickListener(new View.OnClickListener() {
-               @Override
-               public void onClick(View view) {
-                   Intent intent=new Intent(csesem.this,csesubj.class);
-                   intent.putExtra("allai","threesem");
-                   startActivity(intent);
-               }
-           });
-           sem4.setOnClickListener(new View.OnClickListener() {
-               @Override
-               public void onClick(View view) {
-                   Intent intent=new Intent(csesem.this,csesubj.class);
-                   intent.putExtra("allai","foursem");
-                   startActivity(intent);
-               }
-           });
-           sem5.setOnClickListener(new View.OnClickListener() {
-               @Override
-               public void onClick(View view) {
-                   Intent intent=new Intent(csesem.this,csesubj.class);
-                   intent.putExtra("allai","fivesem");
-                   startActivity(intent);
-               }
-           });
-           sem6.setOnClickListener(new View.OnClickListener() {
-               @Override
-               public void onClick(View view) {
-                   Intent intent=new Intent(csesem.this,csesubj.class);
-                   intent.putExtra("allai","sixsem");
-                   startActivity(intent);
+                   Toast.makeText(csesem.this, "wait some time,Work in Progress...!", Toast.LENGTH_SHORT).show();
                }
            });
 
            sem7.setOnClickListener(new View.OnClickListener() {
                @Override
                public void onClick(View view) {
-                   Intent intent=new Intent(csesem.this,csesubj.class);
-                   intent.putExtra("allai","sevensem");
-                   startActivity(intent);
+                   Toast.makeText(csesem.this, "wait some time,Work in Progress...!", Toast.LENGTH_SHORT).show();
+
                }
            });
            sem8.setOnClickListener(new View.OnClickListener() {
                @Override
                public void onClick(View view) {
-                   Intent intent=new Intent(csesem.this,csesubj.class);
-                   intent.putExtra("allai","eightsem");
-                   startActivity(intent);
+                   Toast.makeText(csesem.this, "wait some time,Work in Progress...!", Toast.LENGTH_SHORT).show();
+
                }
            });
        }
-             else if (str.equals("csd")){
+            else if (str.equals("ai")){
+                sem1.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        Toast.makeText(csesem.this, "wait some time,Work in Progress...!", Toast.LENGTH_SHORT).show();
+                    }
+                });
+                sem2.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        Toast.makeText(csesem.this, "wait some time,Work in Progress...!", Toast.LENGTH_SHORT).show();
+                    }
+                });
            sem3.setOnClickListener(new View.OnClickListener() {
                @Override
                public void onClick(View view) {
-                   Intent intent=new Intent(csesem.this,csesubj.class);
-                   intent.putExtra("allcs","threesem");
-                   startActivity(intent);
+                   Toast.makeText(csesem.this, "wait some time,Work in Progress...!", Toast.LENGTH_SHORT).show();
+               }
+           });
+           sem4.setOnClickListener(new View.OnClickListener() {
+               @Override
+               public void onClick(View view) {
+                   Toast.makeText(csesem.this, "wait some time,Work in Progress...!", Toast.LENGTH_SHORT).show();
+               }
+           });
+           sem5.setOnClickListener(new View.OnClickListener() {
+               @Override
+               public void onClick(View view) {
+                   Toast.makeText(csesem.this, "wait some time,Work in Progress...!", Toast.LENGTH_SHORT).show();
+               }
+           });
+           sem6.setOnClickListener(new View.OnClickListener() {
+               @Override
+               public void onClick(View view) {
+                   Toast.makeText(csesem.this, "wait some time,Work in Progress...!", Toast.LENGTH_SHORT).show();
+               }
+           });
+
+           sem7.setOnClickListener(new View.OnClickListener() {
+               @Override
+               public void onClick(View view) {
+                   Toast.makeText(csesem.this, "wait some time,Work in Progress...!", Toast.LENGTH_SHORT).show();
+               }
+           });
+           sem8.setOnClickListener(new View.OnClickListener() {
+               @Override
+               public void onClick(View view) {
+                   Toast.makeText(csesem.this, "wait some time,Work in Progress...!", Toast.LENGTH_SHORT).show();
+               }
+           });
+       }
+            else if (str.equals("cs")){
+           sem3.setOnClickListener(new View.OnClickListener() {
+               @Override
+               public void onClick(View view) {
+                   Toast.makeText(csesem.this, "wait some time,Work in Progress...!", Toast.LENGTH_SHORT).show();
                }
            });
            sem4.setOnClickListener(new View.OnClickListener() {
@@ -341,7 +323,7 @@ public class csesem extends AppCompatActivity {
                }
            });
        }
-             else if (str.equals("bmed")){
+            else if (str.equals("bme")){
            sem3.setOnClickListener(new View.OnClickListener() {
                @Override
                public void onClick(View view) {
@@ -392,7 +374,7 @@ public class csesem extends AppCompatActivity {
                }
            });
        }
-             else if (str.equals("pharmad")){
+            else if (str.equals("pharma")){
            sem3.setOnClickListener(new View.OnClickListener() {
                @Override
                public void onClick(View view) {
@@ -443,7 +425,7 @@ public class csesem extends AppCompatActivity {
                }
            });
        }
-              else if (str.equals("biotechd")){
+            else if (str.equals("biotech")){
 
            sem3.setOnClickListener(new View.OnClickListener() {
                @Override
@@ -496,8 +478,8 @@ public class csesem extends AppCompatActivity {
                    Toast.makeText(csesem.this, "work in progress", Toast.LENGTH_SHORT).show();
                }
            });
-       }      // odd
-              else if (str.equals("mechatronicsd")){
+       }
+            else if (str.equals("mechatronics")){
            sem3.setOnClickListener(new View.OnClickListener() {
                @Override
                public void onClick(View view) {
@@ -548,7 +530,7 @@ public class csesem extends AppCompatActivity {
                }
            });
        }
-              else if (str.equals("mechd")){
+            else if (str.equals("mechanical")){
            sem3.setOnClickListener(new View.OnClickListener() {
                @Override
                public void onClick(View view) {
@@ -599,7 +581,7 @@ public class csesem extends AppCompatActivity {
                }
            });
         }
-              else if (str.equals("civild")){
+            else if (str.equals("civil")){
            sem3.setOnClickListener(new View.OnClickListener() {
                @Override
                public void onClick(View view) {

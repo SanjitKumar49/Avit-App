@@ -11,12 +11,12 @@
     <LinearLayout
         android:id="@+id/moring"
         android:layout_width="match_parent"
-        android:layout_height="288dp"
+        android:layout_height="240dp"
         android:orientation="horizontal">
 
         <ImageView
             android:id="@+id/imageView2"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
             app:srcCompat="@drawable/tea" />
@@ -24,7 +24,7 @@
         <ImageView
             android:id="@+id/imageView3"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:layout_weight="1"
             app:srcCompat="@drawable/dinner" />
     </LinearLayout>
@@ -41,7 +41,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:paddingLeft="40dp"
-            android:text="BRACK-FAST"
+            android:text="BRACK-FAST\n    7:40AM\n         TO\n     8:20AM"
             android:textSize="24sp"
             android:textStyle="bold" />
 
@@ -51,29 +51,30 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:paddingLeft="20dp"
-            android:text="LUNCH"
+            android:text="  LUNCH\n11:40AM\n     TO\n12:40PM"
             android:textSize="24sp"
             android:textStyle="bold" />
+
 
     </LinearLayout>
 
     <LinearLayout
         android:id="@+id/after"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
         android:orientation="horizontal">
 
         <ImageView
             android:id="@+id/imageView4"
-            android:layout_width="376dp"
-            android:layout_height="325dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
             android:layout_weight="1"
             app:srcCompat="@drawable/snack" />
 
         <ImageView
             android:id="@+id/imageView5"
-            android:layout_width="376dp"
-            android:layout_height="325dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
             android:layout_weight="1"
             app:srcCompat="@drawable/lunch" />
 
@@ -82,7 +83,7 @@
     <LinearLayout
         android:id="@+id/afternoon"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:orientation="horizontal">
 
         <TextView
@@ -91,7 +92,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:paddingLeft="40dp"
-            android:text="SNACK"
+            android:text=" SNACK\n3:30PM\n     TO\n4:20PM"
             android:textSize="24sp"
             android:textStyle="bold" />
 
@@ -101,7 +102,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:paddingLeft="20dp"
-            android:text="DINNER"
+            android:text="DINNER\n7:00PM\n     TO\n8:00PM"
             android:textSize="24sp"
             android:textStyle="bold" />
 

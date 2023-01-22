@@ -7,9 +7,10 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.Toast;
 
 public class Dipartment extends AppCompatActivity {
-    private ImageView cse,mech,eee,civil,ece,ai,cs,bme,pharma,biotech,mechatronics;
+    private ImageView cse,mech,eee,civil,ece,ai,cs,bme,pharma,biotech,mechatronics,star;
 
 
     @Override
@@ -27,9 +28,17 @@ public class Dipartment extends AppCompatActivity {
         mechatronics = findViewById(R.id.mechatronics);
         mech = findViewById(R.id.mechanical);
         civil = findViewById(R.id.civil);
+        star = findViewById(R.id.star);
 
         String str = getIntent().getStringExtra("showallsyllabus");{
         if (str.equals("branch")) {
+            star.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    Toast.makeText(Dipartment.this, "Someting new Comes...😍😍", Toast.LENGTH_SHORT).show();
+                }
+            });
+
             cse.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
@@ -49,7 +58,7 @@ public class Dipartment extends AppCompatActivity {
             ece.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    Intent intent = new Intent(Dipartment.this, csesem.class);
+                    Intent intent = new Intent(Dipartment.this, syllabusandsubject.class);
                     intent.putExtra("comman", "eced");
                     startActivity(intent);
                 }
@@ -57,7 +66,7 @@ public class Dipartment extends AppCompatActivity {
             ai.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    Intent intent = new Intent(Dipartment.this, csesem.class);
+                    Intent intent = new Intent(Dipartment.this, syllabusandsubject.class);
                     intent.putExtra("comman", "aid");
                     startActivity(intent);
                 }
@@ -65,14 +74,14 @@ public class Dipartment extends AppCompatActivity {
             cs.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    Intent intent = new Intent(Dipartment.this, csesem.class);
+                    Intent intent = new Intent(Dipartment.this, syllabusandsubject.class);
                     intent.putExtra("comman", "csd");
                     startActivity(intent);}
             });
             bme.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    Intent intent = new Intent(Dipartment.this, csesem.class);
+                    Intent intent = new Intent(Dipartment.this, syllabusandsubject.class);
                     intent.putExtra("comman", "bmed");
                     startActivity(intent);
                 }
@@ -80,7 +89,7 @@ public class Dipartment extends AppCompatActivity {
             pharma.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    Intent intent = new Intent(Dipartment.this, csesem.class);
+                    Intent intent = new Intent(Dipartment.this, syllabusandsubject.class);
                     intent.putExtra("comman", "pharmad");
                     startActivity(intent);
                 }
@@ -88,7 +97,7 @@ public class Dipartment extends AppCompatActivity {
             biotech.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    Intent intent = new Intent(Dipartment.this, csesem.class);
+                    Intent intent = new Intent(Dipartment.this, syllabusandsubject.class);
                     intent.putExtra("comman", "biotechd");
                     startActivity(intent);
                 }
@@ -96,7 +105,7 @@ public class Dipartment extends AppCompatActivity {
             mechatronics.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    Intent intent = new Intent(Dipartment.this, csesem.class);
+                    Intent intent = new Intent(Dipartment.this, syllabusandsubject.class);
                     intent.putExtra("comman", "mechatronicsd");
                     startActivity(intent);
                 }
@@ -104,7 +113,7 @@ public class Dipartment extends AppCompatActivity {
             mech.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    Intent intent = new Intent(Dipartment.this, csesem.class);
+                    Intent intent = new Intent(Dipartment.this, syllabusandsubject.class);
                     intent.putExtra("comman", "mechd");
                     startActivity(intent);
                 }
@@ -112,18 +121,26 @@ public class Dipartment extends AppCompatActivity {
             civil.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    Intent intent = new Intent(Dipartment.this, csesem.class);
+                    Intent intent = new Intent(Dipartment.this, syllabusandsubject.class);
                     intent.putExtra("comman", "civild");
                     startActivity(intent);
                 }
             });
         }
 
+                                   //Question-bank & Subject //
+
         else if (str.equals("paper")) {
+            star.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    Toast.makeText(Dipartment.this, "Someting new Comes...😍😍", Toast.LENGTH_SHORT).show();
+                }
+            });
             cse.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    Intent intent = new Intent(Dipartment.this, csesem.class);
+                    Intent intent = new Intent(Dipartment.this, notesandquestion.class);
                     intent.putExtra("comman", "csedp");
                     startActivity(intent);
                 }
@@ -131,7 +148,7 @@ public class Dipartment extends AppCompatActivity {
             eee.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    Intent intent = new Intent(Dipartment.this, csesem.class);
+                    Intent intent = new Intent(Dipartment.this, notesandquestion.class);
                     intent.putExtra("comman", "eeedp");
                     startActivity(intent);
                 }
@@ -139,15 +156,16 @@ public class Dipartment extends AppCompatActivity {
             ece.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    Intent intent = new Intent(Dipartment.this, csesem.class);
+                    Intent intent = new Intent(Dipartment.this, notesandquestion.class);
                     intent.putExtra("comman", "ecedp");
                     startActivity(intent);
+
                 }
             });
             ai.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    Intent intent = new Intent(Dipartment.this, csesem.class);
+                    Intent intent = new Intent(Dipartment.this, notesandquestion.class);
                     intent.putExtra("comman", "aidp");
                     startActivity(intent);
                 }
@@ -155,7 +173,7 @@ public class Dipartment extends AppCompatActivity {
             cs.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    Intent intent = new Intent(Dipartment.this, csesem.class);
+                    Intent intent = new Intent(Dipartment.this, notesandquestion.class);
                     intent.putExtra("comman", "csdp");
                     startActivity(intent);
                 }
@@ -163,7 +181,7 @@ public class Dipartment extends AppCompatActivity {
             bme.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    Intent intent = new Intent(Dipartment.this, csesem.class);
+                    Intent intent = new Intent(Dipartment.this, notesandquestion.class);
                     intent.putExtra("comman", "bmedp");
                     startActivity(intent);
                 }
@@ -171,7 +189,7 @@ public class Dipartment extends AppCompatActivity {
             pharma.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    Intent intent = new Intent(Dipartment.this, csesem.class);
+                    Intent intent = new Intent(Dipartment.this, notesandquestion.class);
                     intent.putExtra("comman", "pharmadp");
                     startActivity(intent);
                 }
@@ -179,15 +197,15 @@ public class Dipartment extends AppCompatActivity {
             biotech.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    Intent intent = new Intent(Dipartment.this, csesem.class);
-                    intent.putExtra("comman", "biptechdp");
+                    Intent intent = new Intent(Dipartment.this, notesandquestion.class);
+                    intent.putExtra("comman", "biotechdp");
                     startActivity(intent);
                 }
             });
             mechatronics.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    Intent intent = new Intent(Dipartment.this, csesem.class);
+                    Intent intent = new Intent(Dipartment.this, notesandquestion.class);
                     intent.putExtra("comman", "mechatronicsdp");
                     startActivity(intent);
                 }
@@ -195,15 +213,15 @@ public class Dipartment extends AppCompatActivity {
             mech.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    Intent intent = new Intent(Dipartment.this, csesem.class);
-                    intent.putExtra("comman", "mechdp");
+                    Intent intent = new Intent(Dipartment.this, notesandquestion.class);
+                    intent.putExtra("comman", "mechanicaldp");
                     startActivity(intent);
                 }
             });
             civil.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    Intent intent = new Intent(Dipartment.this, csesem.class);
+                    Intent intent = new Intent(Dipartment.this, notesandquestion.class);
                     intent.putExtra("comman", "civildp");
                     startActivity(intent);
                 }

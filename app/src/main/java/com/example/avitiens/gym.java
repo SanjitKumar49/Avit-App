@@ -19,21 +19,10 @@ import java.io.File;
 import java.io.IOException;
 
 public class gym extends AppCompatActivity {
-    private ImageView imageView7;
-    private TextView textView20, textView21, textView22, textView23;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_gym);
-        // for mess layout
-             imageView7 = findViewById(R.id.imageView8);
-             textView20 = findViewById(R.id.textView20);
-             textView21 = findViewById(R.id.textView21);
-            textView22 = findViewById(R.id.textView22);
-            textView23 = findViewById(R.id.textView23);
-
-
-
     }
 }
