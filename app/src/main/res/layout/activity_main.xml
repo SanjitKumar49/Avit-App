@@ -211,7 +211,7 @@
                     app:srcCompat="@drawable/location" />
 
                 <ImageView
-                    android:id="@+id/low"
+                    android:id="@+id/mentences"
                     android:layout_width="400dp"
                     android:layout_height="133dp"
                     android:layout_weight="1"

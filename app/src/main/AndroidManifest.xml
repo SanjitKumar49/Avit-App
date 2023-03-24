@@ -8,7 +8,7 @@
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
         android:icon="@mipmap/ic_launcher"
-        android:label="Avit College"
+        android:label="Avit"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Avitiens"
@@ -16,11 +16,13 @@
         <activity
             android:name=".home"
             android:exported="true"
-            android:label="Avitien">
+            android:label="Avitian">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
@@ -76,7 +78,7 @@
         <activity
             android:name=".avitmess"
             android:exported="false"
-            android:label="Weak">
+            android:label="Week">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
@@ -92,7 +94,7 @@
         <activity
             android:name=".webpage"
             android:exported="false"
-            android:label="ServerPage">
+            android:label="WebPage">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
